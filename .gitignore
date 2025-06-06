@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+main.js
+*.js.map
+dist/
+*.sh
+docs/
+# Ignore all documentation files
+/docs/

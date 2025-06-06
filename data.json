@@ -1,0 +1,10 @@
+{
+  "idFormat": "timestamp",
+  "appendId": true,
+  "fleetingTemplate": "---\nid: {{ID}}\nzettel_type: fleeting\n---\n\n# Quick thought on {{DATE}}\n\n- {{TIME}} [[ ]]",
+  "literatureTemplate": "---\nid: {{ID}}\nzettel_type: literature\nsource: \"\" # e.g., \"Sönke Ahrens - How to Take Smart Notes\"\npage: \"\" # e.g., \"p. 42\"\nkeywords: [] # e.g., \"Zettelkasten, Note-taking\"\n---\n\n# From Source: [[Placeholder Title]]\n\n**Summary (in my own words):**\n\n\n**Key Points:**\n-\n\n**Connections/Thoughts:**\n- [[ ]]",
+  "permanentTemplate": "---\nid: {{ID}}\nzettel_type: permanent\n---\n\n# My Zettel Title\n\nThis is my single, atomic idea, written in my own words.\n\n---\n**Connections:**\n- [[ ]] # Link to existing Zettels, literature notes, or fleeting notes\n- [[ ]]\n\n**Source (if applicable):** [[Placeholder Source Title]]",
+  "enableOrphanedPane": true,
+  "ignoreFrontmatter": "zettel_ignore",
+  "showRibbonIcon": true
+}

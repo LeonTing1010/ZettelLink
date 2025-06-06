@@ -1,0 +1,31 @@
+{
+  "name": "zettellink-obsidian-plugin",
+  "version": "1.0.0",
+  "description": "Guide Obsidian users towards fundamental Zettelkasten principles through subtle assistance",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "release": "npm run build && git add main.js styles.css manifest.json && git commit -m 'Release: v$npm_package_version' && git tag $npm_package_version && git push origin main && git push origin $npm_package_version",
+    "release:gh": "npm run build && git add main.js styles.css manifest.json && git commit -m 'Release: v$npm_package_version' && git tag $npm_package_version && git push origin main && git push origin $npm_package_version && gh release create $npm_package_version main.js styles.css manifest.json --title 'ZettelLink v$npm_package_version' --notes 'Release $npm_package_version for Obsidian.'"
+  },
+  "keywords": [
+    "obsidian-plugin",
+    "zettelkasten",
+    "knowledge-management",
+    "note-taking"
+  ],
+  "author": "Leo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.17.3",
+    "obsidian": "latest",
+    "tslib": "2.4.0",
+    "typescript": "4.7.4"
+  }
+}
