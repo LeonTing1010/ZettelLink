@@ -1,7 +1,7 @@
 {
   "id": "zettellink",
   "name": "ZettelLink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "0.15.0",
   "description": "Guide Obsidian users towards fundamental Zettelkasten principles through subtle assistance",
   "author": "Leo",
