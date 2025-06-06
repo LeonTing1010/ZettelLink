@@ -7,8 +7,8 @@
     "dev": "node esbuild.config.mjs",
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production && mkdir -p dist && cp styles.css dist/styles.css && cp manifest.json dist/manifest.json",
     "version": "node version-bump.mjs && git add manifest.json versions.json",
-    "release": "npm run build && git add dist/main.js dist/styles.css dist/manifest.json && git commit -m 'Release: v$npm_package_version' && git tag $npm_package_version && git push origin main && git push origin $npm_package_version",
-    "release:gh": "npm run build && git add dist/main.js dist/styles.css dist/manifest.json && git commit -m 'Release: v$npm_package_version' && git tag $npm_package_version && git push origin main && git push origin $npm_package_version && gh release create $npm_package_version dist/main.js dist/styles.css dist/manifest.json --title 'ZettelLink v$npm_package_version' --notes 'Release $npm_package_version for Obsidian.'"
+    "release": "npm run build && git add dist/main.js dist/styles.css dist/manifest.json && git commit -m 'Release: 1.0.0' && git tag 1.0.0 && git push origin main && git push origin 1.0.0",
+    "release:gh": "npm run build && git add dist/main.js dist/styles.css dist/manifest.json && git commit -m 'Release: 1.0.0' && git tag 1.0.0 && git push origin main && git push origin 1.0.0 && gh release create 1.0.0 dist/main.js dist/styles.css dist/manifest.json --title 'ZettelLink 1.0.0' --notes 'Release 1.0.0 for Obsidian.'"
   },
   "keywords": [
     "obsidian-plugin",

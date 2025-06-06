@@ -137,4 +137,4 @@ For issues, feature requests, or questions, please open an issue on the GitHub r
 
 *This plugin respects Obsidian's core design philosophy while gently guiding users towards effective Zettelkasten practices.*
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U7U81FTOBP)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/lt1010)
