@@ -2,7 +2,11 @@ node_modules/
 .env
 .DS_Store
 *.js.map
-dist/
+# Ignore everything in dist except main.js, styles.css, manifest.json
+/dist/*
+!/dist/main.js
+!/dist/styles.css
+!/dist/manifest.json
 *.sh
 docs/
 # Ignore all documentation files
